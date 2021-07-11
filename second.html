@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> BaseButtons </title>
+<meta charset="utf-8">
+<meta name="author" content="Wadiah">
+</head>
+
+
+<style>
+
+
+.btn-group button {
+  background-color:#2196F333; /* Blue background */
+  border: 3px solid green; /* Green border */
+  font color: black ; /* black text */
+  font-size:22px;  /* text size */
+  padding: 20px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 13%; /* Set a width if needed */
+  border-radius: 50%;
+}
+
+.Medl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+ } 
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  
+ } 
+ 
+.down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+ } 
+ 
+ .top{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+ }
+ h1 {
+  text-align: center;
+}
+ 
+</style>
+<body>
+
+<h1>Directions </h1> 
+ 
+ 
+ 
+ <div class="btn-group">
+	
+	<div class="top">
+	<button id=BL input type="button" value="move" name = "Forward" onclick="MoveForward" >Forward</button>
+	</div>
+	
+	<div class="Medl">
+	<button id=BF input type="button" value="move" name = "left" onclick="MoveToLeft" style="margin-right:40px";>Left</button>
+	<button id=BS input type="button" value="move" name = "Stop" onclick="MoveStop"  style="margin-right:40px";>Stop</button>
+	<button id=BR input type="button" value="move" name = "Right" onclick="MoveToRight"style="margin-left:40px";>Right</button>
+	</div>
+	
+	<div class="down">
+	<button id=Bd input type="button" value="move" name = "Backward" onclick="MoveToBackward" >Backward</button>
+	  </div>
+	  
+</div>
+
+
+
+</body>
+
+</html>
